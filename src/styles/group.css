@@ -1,12 +1,12 @@
-@media only screen and (max-width:440p){.group_name{
+.group_name{
     flex-direction: row;
     display:flex;
+    background: url("../images/bgimg.png") ;
     height:65vh;
-    background-image: url("../images/bgimg.png") ;
     background-repeat:no-repeat;
-    background-size:100% 100%;
+    background-size:cover;
     min-width: 660px;
-}
+    background-position: center center;
 }
 .title{
  display:flex;
@@ -22,10 +22,10 @@
  .heading{
     width: 25vw;
     height:9vh;
-    min-width: 660px;
+    min-width: 500px;
     min-height:50px ;
     color:white;
-    font-size: 2.3em;
+    font-size: 2em;
     font-weight: 700;
     padding:0;
 }
@@ -37,4 +37,12 @@
     font-size: 1.2em;
     font-weight: 400;
     
+}
+@media (min-width:700px){
+    .group_name{
+        min-width:660px;
+    }
+    .title{
+        min-width: 660px;
+    }
 }
